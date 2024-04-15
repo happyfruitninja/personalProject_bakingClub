@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 10px;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 50px;
+    margin: 5px 0;
+    width:100%;
+}
+nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+.intro{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.intro p {
+   margin: 0 auto;
+    width: 70%;
+}
+
+.thisMonth {
+    height:300px;
+    width:300px;
+    border: 1px solid red;
+    border-radius: 15px;
+    
+}
