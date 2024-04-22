@@ -25,6 +25,10 @@ nav ul li {
     margin: 10px 0;
 }
 
+.intro img {
+    width: 50%;
+}
+
 .intro p {
    margin: 0 auto;
     width: 70%;
@@ -36,4 +40,10 @@ nav ul li {
     border: 1px solid red;
     border-radius: 15px;
     
+}
+
+@media only screen and (max-width: 400px) {
+    * {
+        background: skyblue;
+    }
 }
