@@ -3,57 +3,127 @@
     padding: 0;
 }
 
+body {
+    padding: 10px;
+}
+
 nav {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     height: 50px;
     margin: 5px 0;
-    width:100%;
+    width: 100%;
 }
-nav ul{
-  display: flex;
-  list-style-type: none;
+
+nav ul {
+    display: flex;
+    list-style-type: none;
 }
 
 nav ul li {
     margin: 0 5px;
 }
 
-.intro{
-    text-align: center;
+h1,
+blockquote {
+    font-family: "indie flower", Helvetica, sans-serif
+}
+
+p,
+li {
+    font-family: "Montserrat", Helvetica, sans-serif
+}
+
+/* Section - Intro */
+
+.intro {
+    width: 100%;
     margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+
 }
 
-.intro img {
+.introImage {
     width: 50%;
+    position: relative;
 }
 
-.intro p {
-   margin: 0 auto;
-    width: 70%;
+.introImage img {
+    width: 100%;
+    height: 100%;
+    /* margin-top : -13.5%; */
 }
+
+.introImage blockquote {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    max-width: 23 0px;
+    font-size: 1.20em;
+    font-weight: 700;
+}
+
+.introText {
+    width: 50%;
+  margin: 10px;
+  
+}
+
+.introText p {
+    margin: 10px 0;
+
+}
+
+/* Section - thisMonth */
 
 .thisMonth {
-    height:300px;
-    width:300px;
     border: 1px solid red;
     border-radius: 15px;
-   margin: 10px;
-   object-position: center;
-    
-}
-.thisMonth img{
-    margin:0;
-    width:100%;
-    height:auto;
-  object-fit:cover;
-  border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 
 }
+
+.card img {
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+.card {
+    margin: 10px;
+    width: 40%;
+    height: auto;
+}
+
 
 @media only screen and (max-width: 400px) {
     * {
         background: skyblue;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .introImage {
+        width: 100%;
+    }
+
+    .introText {
+        width: 100%; margin: 10px 0;
+    }
+
+    .introImage blockquote {
+        left: 35%;
+        max-width: 23 0px;
+        font-size: 1.20em;
+        font-weight: 700;
     }
 }
